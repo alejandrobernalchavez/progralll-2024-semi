@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!#t1$^e=vb&t6i@j)9+bf1$w6k(kl=$ii-srpv8**)@l6i78i_'
+SECRET_KEY = 'django-insecure--t$+-j+7!t^6&7^+wdx+bsu#ovpzqtorai11&%gkism&hcz$h1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'academica',
+    'academica'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'appacademica.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Luis Hernandez/Desktop/PrograIII-2024-Semi/appacademica/academica/plantillas/'],
+        'DIRS': [BASE_DIR / 'academica/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'appacademica.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'dbacademica.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -122,4 +122,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
