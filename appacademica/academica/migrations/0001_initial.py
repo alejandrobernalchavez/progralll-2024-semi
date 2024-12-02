@@ -21,5 +21,9 @@ class Migration(migrations.Migration):
                 ('telefono', models.CharField(max_length=10)),
             ],
         ),
+<<<<<<< HEAD
     ]
     
+=======
+    ]
+>>>>>>> 30438959c519b53811b049b7977a21b1616bd8c2
